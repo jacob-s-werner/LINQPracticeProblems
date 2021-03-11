@@ -48,17 +48,23 @@ namespace PracticeProblemsLINQ
         }
         #endregion
 
-        //#region Problem 3
-        ////(5 points) Problem 3
-        ////Using LINQ, write a method that takes in a list of customers and returns the lone customer who has the name of Mike. 
-        //public static Customer RunProblem3(List<Customer> customers)
-        //{
-        //    //code
+        #region Problem 3
+        //(5 points) Problem 3
+        //Using LINQ, write a method that takes in a list of customers and returns the lone customer who has the name of Mike. 
+        public static Customer RunProblem3(List<Customer> customers)
+        {
+            //code
+            var customerFound = customers.Where(customer => customer.FirstName == "Mike").Select(customer => customer);
+            Customer loneCustomerMike = new Customer(0,null, null); // gets rid of unassigned local variable error
 
-        //    //return
-
-        //}
-        //#endregion
+            foreach (Customer customer in customerFound)
+            {
+                loneCustomerMike = customer;
+            }
+            //return
+            return loneCustomerMike;
+        }
+        #endregion
 
         //#region Problem 4
         ////(5 points) Problem 4
