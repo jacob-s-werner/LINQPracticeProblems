@@ -38,7 +38,7 @@ namespace PracticeProblemsLINQ
                 "98,100,66,74,55"
             };
 
-
+            double classGradeAverage = LinqProblems.RunProblem5(classGrades);
             //--------------------
             //Bonus Problem 1
             string letters = "terrill";
