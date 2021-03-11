@@ -27,7 +27,7 @@ namespace PracticeProblemsLINQ
                 new Customer(4, "Dan", "Laffey")
             };
             Customer loneMike = LinqProblems.RunProblem3(customers); //Problem 3
-
+            Customer newCustomerWithID3 = LinqProblems.RunProblem4(customers); //Problem 4
 
             //Problem 5
             List<string> classGrades = new List<string>()

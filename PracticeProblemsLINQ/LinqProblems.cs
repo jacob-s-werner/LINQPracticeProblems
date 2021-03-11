@@ -62,8 +62,16 @@ namespace PracticeProblemsLINQ
         public static Customer RunProblem4(List<Customer> customers)
         {
             //code
-            
+            var customerFound = customers.Where(customer => customer.Id == 3).Select(customer => customer);
+            Customer customerWithID3 = new Customer(0, null, null); // gets rid of unassigned local variable error
+
+            foreach (Customer customer in customerFound)
+            {
+                customerWithID3 = new Customer(customer.Id, "Johnny", "TwoHands");
+            }
+
             //return
+            return customerWithID3;
         }
         #endregion
 
