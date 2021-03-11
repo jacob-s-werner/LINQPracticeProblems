@@ -16,7 +16,7 @@ namespace PracticeProblemsLINQ
 
             //Problem 2
             List<string> names = new List<string>() { "Mike", "Brad", "Nevin", "Ian", "Mike" };
-
+            List<string> distinctNames = LinqProblems.RunProblem2(names);
 
             //Problem 3 & Problem 4
             List<Customer> customers = new List<Customer>()
