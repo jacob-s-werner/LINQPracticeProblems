@@ -17,16 +17,10 @@ namespace PracticeProblemsLINQ
         public static List<string> RunProblem1(List<string> words)
         {
             //code
-            var thStringList = words.Where(word => word.Contains("th")).Select(word => word);
-            List<string> newList = new List<string>();
-
-            foreach (string word in thStringList)
-            {
-                newList.Add(word);
-            }
-            
+            List<string> thStringList = words.Where(word => word.Contains("th")).Select(word => word).ToList();
+             
             //return
-            return newList;
+            return thStringList;
         }
         #endregion
 
@@ -36,15 +30,10 @@ namespace PracticeProblemsLINQ
         public static List<string> RunProblem2(List<string> names)
         {
             //code
-            var noDuplicateList = names.Select(name => name).Distinct();
-            List<string> newList = new List<string>();
-
-            foreach (string word in noDuplicateList)
-            {
-                newList.Add(word);
-            }
+            List<string> noDuplicateList = names.Select(name => name).Distinct().ToList();
+            
             //return
-            return newList;
+            return noDuplicateList;
         }
         #endregion
 
@@ -66,18 +55,17 @@ namespace PracticeProblemsLINQ
         }
         #endregion
 
-        //#region Problem 4
-        ////(5 points) Problem 4
-        ////Using LINQ, write a method that takes in a list of customers and returns the customer who has an id of 3. 
-        ////Then, update that customer's first name and last name to completely different names and return the newly updated customer from the method.
-        //public static Customer RunProblem4(List<Customer> customers)
-        //{
-        //    //code
-
-        //    //return
-
-        //}
-        //#endregion
+        #region Problem 4
+        //(5 points) Problem 4
+        //Using LINQ, write a method that takes in a list of customers and returns the customer who has an id of 3. 
+        //Then, update that customer's first name and last name to completely different names and return the newly updated customer from the method.
+        public static Customer RunProblem4(List<Customer> customers)
+        {
+            //code
+            
+            //return
+        }
+        #endregion
 
         //#region Problem 5
         ////(5 points) Problem 5
